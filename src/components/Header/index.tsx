@@ -6,6 +6,8 @@ import { Container } from './styles';
 
 import Logo from '../../assets/logo.svg';
 
+import Import from '../../pages/Import';
+
 interface HeaderProps {
   size?: 'small' | 'large';
 }
@@ -15,9 +17,8 @@ const Header: React.FC<HeaderProps> = ({ size = 'large' }: HeaderProps) => (
     <header>
       <img src={Logo} alt="GoFinances" />
       <nav>
-        {
-          // Todo
-        }
+        <Link to="/">Listar</Link>
+        <Link to="/import">importar</Link>
       </nav>
     </header>
   </Container>
